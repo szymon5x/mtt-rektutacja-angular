@@ -3,7 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 import * as components from './components';
 
-const routes: Routes = [{ path: '', component: components.DashboardComponent }];
+const routes: Routes = [
+  { path: '', component: components.DashboardComponent },
+  { path: 'todo-list', component: components.TodoListComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
